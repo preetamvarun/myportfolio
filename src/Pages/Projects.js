@@ -152,15 +152,6 @@ const Projects = () => {
                       <SiGithub size={24} />
                     </a>
                   </button>
-                  <button
-                    className='hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent'
-                    data-tip='Live Link'>
-                    <a
-                      href='https://savorbites.netlify.app/'
-                      target={'__blank'}>
-                      <HiStatusOnline size={24} />
-                    </a>
-                  </button>
                 </div>
               </div>
             </div>
