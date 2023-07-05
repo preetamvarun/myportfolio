@@ -4,6 +4,7 @@ import Layout from '../Layout/Layout';
 import neumorphic from '../Assets/neumorphic-calci.png';
 import TipCalci from '../Assets/reset.png';
 import RestApi from '../Assets/rest-api.png';
+import ytClone from '../Assets/ytClone.png';
 import fylo from '../Assets/fylo.png';
 import savorBites from '../Assets/savorBites.png';
 import { SiGithub } from 'react-icons/si';
@@ -64,6 +65,82 @@ const Projects = () => {
           </h1>
           <div className='flex flex-col gap-20'>
             <div className='flex flex-col sm:flex-row items-center gap-10 text-white'>
+              {/* right section for project details */}
+              <div className='flex flex-col gap-2'>
+                <h1 className='text-center text-2xl font-semibold mb-4 font-mono'>
+                  <span className='mr-4 text-xl text-[#64ffda]'>01.</span>
+                  Youtube Clone
+                </h1>
+                <p className='flex items-center gap-2'>
+                  <h4 className='font-medium'>Project Category :</h4>
+                  <p className='text-gray-200'>HTML Tailwind React</p>
+                </p>
+
+                <div>
+                  <h4 className='font-medium'>Technology Used</h4>
+                  <ul className='flex items-center list-disc gap-8 pl-4 flex-wrap text-gray-200'>
+                    <li>HTML</li>
+                    <li>Tailwind</li>
+                    <li>React</li>
+                    <li>Redux.js</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className='font-medium'>Description</h4>
+                  <p className='text-gray-200'>
+                    Developed using React, Redux, and Tailwind CSS, it is a
+                    feature-rich application that closely resembles the popular
+                    video-sharing platform
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className='font-medium'>Key Features</h4>
+                  <ul className='text-gray-200 list-disc pl-4'>
+                    <li>
+                      Centralized Data Management: Redux is implemented to
+                      maintain a centralized data store, enabling smooth data
+                      flow between components.
+                    </li>
+                    <li>
+                      The app supports nested comments with multiple levels
+                      using recursion, allowing users to engage in discussions.
+                    </li>
+                    <li>
+                      An advanced search engine is implemented, which suggests
+                      search results as the user types. To optimize performance,
+                      a debouncing mechanism with a timer of 200 ms is employed
+                      for search queries.
+                    </li>
+                    <li>
+                      Cache Implementation: The app utilizes a cache in the
+                      Redux store to store previously suggested search results,
+                      minimizing API calls
+                    </li>
+                  </ul>
+                </div>
+
+                {/* for buttons */}
+                <div className='flex items-center gap-4'>
+                  <button
+                    className='hover:text-[#64ffda] transition-all ease-in-out duration-300 tooltip tooltip-accent'
+                    data-tip='Repo Link'>
+                    <a
+                      href='https://github.com/preetamvarun/YT_CLONE'
+                      target={'__blank'}>
+                      <SiGithub size={24} />
+                    </a>
+                  </button>
+                </div>
+              </div>
+              <img
+                src={ytClone}
+                className='sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md'
+                alt='img'
+              />
+            </div>
+            <div className='flex flex-col sm:flex-row items-center gap-10 text-white'>
               <img
                 src={savorBites}
                 className='sm:w-1/3 border-2 border-[#64ffda] cursor-pointer p-2 transition-all ease-in-out hover:p-0 rounded-md'
@@ -73,7 +150,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className='flex flex-col gap-2'>
                 <h1 className='text-center text-2xl font-semibold mb-4 font-mono'>
-                  <span className='mr-4 text-xl text-[#64ffda]'>01.</span>
+                  <span className='mr-4 text-xl text-[#64ffda]'>02.</span>
                   Savor Bites
                 </h1>
                 <p className='flex items-center gap-2'>
@@ -166,7 +243,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className='flex flex-col gap-2'>
                 <h1 className='text-center text-2xl font-semibold mb-4 font-mono'>
-                  <span className='mr-4 text-xl text-[#64ffda]'>02.</span>
+                  <span className='mr-4 text-xl text-[#64ffda]'>03.</span>
                   Rest Countries Api
                 </h1>
                 <p className='flex items-center gap-2'>
@@ -187,13 +264,13 @@ const Projects = () => {
                 <div>
                   <h4 className='font-medium'>Description</h4>
                   <p className='text-gray-200'>
-                    Your project is a website that displays information about
-                    countries worldwide, including their flags, population
-                    count, country name, capital, and region. Users can filter
-                    or search for specific countries and view additional
-                    details, such as native name, languages, currency, and
-                    border countries. The website is fully responsive and offers
-                    a toggle theme functionality for dark and light mode.
+                    This website displays information about countries worldwide,
+                    including their flags, population count, country name,
+                    capital, and region. Users can filter or search for specific
+                    countries and view additional details, such as native name,
+                    languages, currency, and border countries. The website is
+                    fully responsive and offers a toggle theme functionality for
+                    dark and light mode.
                   </p>
                 </div>
 
@@ -260,7 +337,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className='flex flex-col gap-2'>
                 <h1 className='text-center text-2xl font-semibold mb-4 font-mono'>
-                  <span className='mr-4 text-xl text-[#64ffda]'>03.</span>
+                  <span className='mr-4 text-xl text-[#64ffda]'>04.</span>
                   Tip Calculator
                 </h1>
                 <p className='flex items-center gap-2'>
@@ -355,7 +432,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className='flex flex-col gap-2'>
                 <h1 className='text-center text-2xl font-semibold mb-4 font-mono'>
-                  <span className='mr-4 text-xl text-[#64ffda]'>04.</span>
+                  <span className='mr-4 text-xl text-[#64ffda]'>05.</span>
                   Fylo Landing Page
                 </h1>
                 <p className='flex items-center gap-2'>
@@ -444,7 +521,7 @@ const Projects = () => {
               {/* right section for project details */}
               <div className='flex flex-col gap-2'>
                 <h1 className='text-center text-2xl font-semibold mb-4 font-mono'>
-                  <span className='mr-4 text-xl text-[#64ffda]'>05.</span>
+                  <span className='mr-4 text-xl text-[#64ffda]'>06.</span>
                   Neumorphic Calculator
                 </h1>
                 <p className='flex items-center gap-2'>
