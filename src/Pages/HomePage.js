@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../Layout/Layout';
-import Resume from '../Assets/Resume-01.pdf';
+import Resume from '../Assets/Resume-V2.pdf';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
